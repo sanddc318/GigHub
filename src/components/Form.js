@@ -1,12 +1,17 @@
 import React, { Fragment } from 'react'
 
 const Form = props => (
-  <Fragment>
-    <form className="form-container">
-      <header className="form-header">
-        Gig<span className="emphasis">Hub</span>
-      </header>
+  <section
+    style={{
+      boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'
+    }}
+  >
+    <header>
+      Gig<span className="emphasis">Hub</span>
+    </header>
 
+    {/* Needs to be own component */}
+    <div className="container container--form">
       <p>
         Need a job quick? Don't have time schedule interviews and definitely
         can't be bothered to fill out paperwork?
@@ -16,22 +21,21 @@ const Form = props => (
         has work that will fit your needs. Get started below!
       </p>
 
-      {/* Needs to be own component */}
-      <div className="container">
+      <form className="form-container">
         <label htmlFor="query">
-          What are you looking for?
-          <input
-            type="text"
-            className="form-input"
-            name="query"
-            placeholder="ex. mow the lawn, paint a house"
-          />
+          What are you looking to do? <br />
         </label>
+        <input
+          type="text"
+          className="form-input"
+          name="query"
+          placeholder="ex. mow the lawn, paint a house"
+        />
 
         <button className="button">Find Job</button>
-      </div>
-    </form>
-  </Fragment>
+      </form>
+    </div>
+  </section>
 )
 
 export default Form

@@ -1,9 +1,4 @@
-.form-container
-  border: 1px solid $off-black
-  box-sizing: border-box
-  width: 100%
-
-.form-header
+header
   background: $off-black
   color: white
   font-size: $xl-size
@@ -14,3 +9,29 @@
 .emphasis
   color: $light-gray
   font-weight: 500
+
+.form-container
+  display: flex
+  flex-direction: column
+
+label
+  font-size: $l-size
+  margin: 5rem 0 $s-size 0
+  text-align: center
+
+.form-input
+  box-sizing: border-box
+  height: 50px
+  margin: $m-size 0
+  padding: $s-size
+  width: 100%
+
+.form-input:active,
+.form-input:focus
+  outline: none;
+
+.button
+  background: $off-black
+  color: white
+  font-size: 1.8rem
+  padding: $m-size 0

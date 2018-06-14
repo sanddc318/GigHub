@@ -1,7 +1,23 @@
 .container
-  border-right: 1px solid $light-gray
   box-sizing: border-box
-  display: inherit
+  padding: $l-size
+  width: 100%
+
+.container--left
+  background: lighten($light-gray, 15%)
+  border-right: $s-size solid $light-gray
   height: 100vh
   padding: $xl-size
-  width: 100%
+
+.container--form
+  background: white
+  color: $off-black
+  display: flex
+  flex-direction: column
+  padding: $xl-size 8rem
+
+.container--form > p
+  font-size: 1.7rem
+  font-weight: 100
+  line-height: 1.4
+  margin: 0 auto $m-size auto

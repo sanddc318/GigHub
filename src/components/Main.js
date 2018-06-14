@@ -4,7 +4,7 @@ import Form from './Form'
 
 const Main = () => (
   <main className="master-container">
-    <section className="container">
+    <section className="container container--left">
       <Form />
     </section>
 
